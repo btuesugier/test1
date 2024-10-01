@@ -17,11 +17,6 @@ body:
     attributes:
       label: 再現手順
       description: 不具合を再現させる手順を記載してください。
-      value: |
-        1. 
-        2. 
-        3. 
-        ...
     validations:
       required: true
   - type: textarea
@@ -29,25 +24,28 @@ body:
     attributes:
       label: 再現手順
       description: 不具合を再現させる手順を記載してください。
-      value: |
-        1. 
-        2. 
-        3. 
-        ...
     validations:
       required: true
-
+  - type: dropdown
+    id: dropdown1
+    attributes:
+      label: 事象
+      options:
+        - 1:システムダウン
+        - 2:異常終了
+        - 3:データ破壊(ファイル、テーブル)
+        - 4:データ更新誤り
+        - 5:部分(一部機能障害)
+        - 6:形式(メッセージ、データ等)
+        - 7:その他
+    validations:
+      required: true
   - type: input
     id: environment
     attributes:
       label: 再現環境
       description: |
         再現環境を記載してください。
-        例：
-        Chrome + Windows
-        Edge + Windows
-        Chrome + macOS
-        Safari + macOS
     validations:
       required: true
   - type: textarea
