@@ -36,20 +36,7 @@ body:
         ...
     validations:
       required: true
-  - type: dropdown
-    id: dropdown1
-    attributes:
-      label: 事象
-      options:
-        - 1:システムダウン
-        - 2:異常終了
-        - 3:データ破壊(ファイル、テーブル)
-        - 4:データ更新誤り
-        - 5:部分(一部機能障害)
-        - 6:形式(メッセージ、データ等)
-        - 7:その他
-    validations:
-      required: true
+
   - type: input
     id: environment
     attributes:
