@@ -19,15 +19,8 @@ body:
       description: 不具合を再現させる手順を記載してください。
     validations:
       required: true
-  - type: textarea
-    id: process
-    attributes:
-      label: 再現手順
-      description: 不具合を再現させる手順を記載してください。
-    validations:
-      required: true
   - type: dropdown
-    id: dropdown
+    id: dropdown1
     attributes:
       label: 事象
       options:
