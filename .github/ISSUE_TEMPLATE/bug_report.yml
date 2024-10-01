@@ -12,15 +12,42 @@ body:
         見た目に関係する場合は、スクリーンショット等を貼り付けてください。
     validations:
       required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: 再現手順
+      description: 不具合を再現させる手順を記載してください。
+      value: |
+        1. 
+        2. 
+        3. 
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: 再現手順
+      description: 不具合を再現させる手順を記載してください。
+      value: |
+        1. 
+        2. 
+        3. 
+        ...
+    validations:
+      required: true
   - type: dropdown
     id: dropdown1
     attributes:
-      label: リストから選択してください。
+      label: 事象
       options:
-        - A
-        - B
-        - C
-        - D
+        - 1:システムダウン
+        - 2:異常終了
+        - 3:データ破壊(ファイル、テーブル)
+        - 4:データ更新誤り
+        - 5:部分(一部機能障害)
+        - 6:形式(メッセージ、データ等)
+        - 7:その他
     validations:
       required: true
   - type: input
@@ -34,18 +61,6 @@ body:
         Edge + Windows
         Chrome + macOS
         Safari + macOS
-    validations:
-      required: true
-  - type: textarea
-    id: process
-    attributes:
-      label: 再現手順
-      description: 不具合を再現させる手順を記載してください。
-      value: |
-        1. 
-        2. 
-        3. 
-        ...
     validations:
       required: true
   - type: textarea
