@@ -27,7 +27,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: dropdown1
+    id: dropdown
     attributes:
       label: 事象
       options:
